@@ -10,7 +10,7 @@
 
 Requirements: NVIDIA GPU (compute capability ≥ 6.0), CUDA Toolkit ≥ 11.6, Nsight Systems (`nsys`), Nsight Compute (`ncu`).
 
-You will need `gcc`, `make`, `nvcc`, the CUDA and cuBLAS headers, `ncu`, and `nsys` installed in your environment. An example installation on Ubuntu:
+You will need `gcc`, `make`, `nvcc`, the CUDA and cuBLAS headers, `ncu`, and `nsys` installed in your environment. How you install them depends on your OS, package manager, and CUDA version. The following is only an example, for Ubuntu with CUDA 12.8 from NVIDIA's apt repository; adapt the package names and versions to your own setup:
 
 ```bash
 sudo apt-get update
