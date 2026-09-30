@@ -1,0 +1,26 @@
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Datasets (re-downloaded by the scripts)
+data/
+
+# Trained weights / exported models
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.ckpt
+
+# Submission bundles
+*.zip
+
+# Slurm job output
+**/slurm/logs/
+
+# HF / misc caches
+.cache/
+hf/
+.DS_Store

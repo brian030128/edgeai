@@ -1,0 +1,24 @@
+[project]
+name = "edgeai-lab0"
+version = "0.1.0"
+description = "Lab 0: MobileNetV2 on CIFAR-10 + Llama-3.2-1B-Instruct with torch.compile"
+requires-python = "==3.11.*"
+dependencies = [
+    "torch==2.9.0",
+    "torchvision",
+    "torchprofile",
+    "onnx",
+    "onnxruntime",
+    "transformers==4.57.3",
+    "accelerate",
+    "safetensors",
+    "huggingface_hub",
+    "numpy",
+    "tqdm",
+    "matplotlib",
+    "pillow",
+    "pydot",
+    "jupyter",
+    "nbconvert",
+    "ipykernel",
+]
