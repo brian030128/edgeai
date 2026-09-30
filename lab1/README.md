@@ -94,7 +94,7 @@ Add at least six configurations to `kKernels[]` that vary BM/BN, BK, and TM/TN. 
 1. In 3a, how many shared-memory loads does each thread do per FMA? In 3b with TM = TN = 8? Relate this to why 3b is faster.
 2. Which configuration is fastest on your GPU? Pick one that is clearly slower and explain the difference using ncu metrics (e.g. register pressure → lower occupancy, bank conflicts, too few blocks to fill the SMs, barrier stalls).
 3. Find a case where higher occupancy was slower, or explain why you could not find one.
-4. Compare with one classmate who has a different GPU. Is the best configuration the same? Give a hypothesis for why or why not.
+
 
 ## Part 4 — Different shapes, and GEMV
 
@@ -176,7 +176,5 @@ sm__warps_active.avg.pct_of_peak_sustained_active \
 ## Notes
 
 - Never profile or benchmark a `-G` (debug) build.
-- `ncu` locks clocks to base frequency by default; the scripts pass `--clock-control none`. Compare ncu metrics with each other, not ncu time with harness time.
 - A missing `__syncthreads()` often passes at small sizes and fails at large ones. Run `check_all.sh`.
 - `row * K` overflows `int` for large matrices; use `size_t` for indices.
-- `float4` loads require 16-byte-aligned addresses.
