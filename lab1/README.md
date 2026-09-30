@@ -14,7 +14,10 @@ You will need `gcc`, `make`, `nvcc`, the CUDA and cuBLAS headers, `ncu`, and `ns
 
 ```bash
 sudo apt-get update
-sudo apt-get install -y --no-install-recommends     build-essential     cuda-nvcc-12-8 cuda-cudart-dev-12-8 libcublas-dev-12-8=12.8.4.1-1     cuda-nsight-compute-12-8 cuda-nsight-systems-12-8
+sudo apt-get install -y --no-install-recommends \
+    build-essential \
+    cuda-nvcc-12-8 cuda-cudart-dev-12-8 libcublas-dev-12-8=12.8.4.1-1 \
+    cuda-nsight-compute-12-8 cuda-nsight-systems-12-8
 echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc && source ~/.bashrc
 ```
 
