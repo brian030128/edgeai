@@ -60,7 +60,7 @@ Open the `.ncu-rep` in Nsight Compute and look at:
 
 1. For one warp at a single iteration `k` of the loop, list which addresses of `A`, `B`, and `C` its 32 threads touch. How many 32-byte sectors does each load need?
 2. Using ncu numbers, show that the kernel is limited by memory access, not by FP32 math. Quote the specific metrics you used.
-3. Why does this kernel reach such a small fraction of cuBLAS even though SGEMM should be compute-bound (Part 0)?
+3. Does this kernel's performance match your Part 0 prediction? In Part 0 you decided whether SGEMM should be compute-bound or memory-bound on your GPU. Compare that prediction with what the profiler shows for this kernel, and explain any gap.
 
 ## Part 2 — Coalescing
 
