@@ -1,0 +1,16 @@
+Case 1
+Compression Ratio: 75.11%
+PPL: 14.2582
+
+Case 2
+Compression Ratio: 81.02%
+PPL: 16.7344
+
+Case 3
+Compression Ratio: 50.27%
+PPL: 19.8656
+
+Case 4
+Compression Ratio: 85.11%
+PPL: 22.7334
+

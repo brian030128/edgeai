@@ -34,5 +34,11 @@ SPECS = {
     # --- case 4 candidate: prune 28% MLP channels + 3-bit per-channel ---
     "c4_a": {"prune": {"rules": [{"cfg": {"ratio": 0.28}}]}, "quant": all_quant(q(3, -1))},
     "c4_b": {"prune": {"rules": [{"cfg": {"ratio": 0.29}}]}, "quant": all_quant(q(3, 640))},
+    # --- sensitivity: only one projection type at 3-bit per-row, rest fp16 ---
+    **{f"sens_{n}": {"quant": [{"names": [n], "cfg": q(3, -1)}]}
+       for n in ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]},
+    # --- sensitivity by depth: 3-bit per-row on 9 consecutive layers, rest fp16 ---
+    **{f"sens_L{a}": {"quant": [{"layers": list(range(a, a + 9)), "cfg": q(3, -1)}]}
+       for a in [0, 9, 18, 27]},
     "c4_mse":{"prune": {"rules": [{"cfg": {"ratio": 0.28}}]}, "quant": all_quant(q(3, -1, mse=True))},
 }

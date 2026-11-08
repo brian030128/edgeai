@@ -1,0 +1,41 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.20it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.20it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:01<00:00,  1.78it/s]
+Token indices sequence length is longer than the specified maximum sequence length for this model (2518423 > 131072). Running this sequence through the model will result in indexing errors
+[layer  0] running compression ratio 0.0236
+[layer  1] running compression ratio 0.0473
+[layer  2] running compression ratio 0.0709
+[layer  3] running compression ratio 0.0946
+[layer  4] running compression ratio 0.1182
+[layer  5] running compression ratio 0.1419
+[layer  6] running compression ratio 0.1655
+[layer  7] running compression ratio 0.1892
+[layer  8] running compression ratio 0.2128
+[layer  9] running compression ratio 0.2365
+[layer 10] running compression ratio 0.2601
+[layer 11] running compression ratio 0.2838
+[layer 12] running compression ratio 0.3074
+[layer 13] running compression ratio 0.3310
+[layer 14] running compression ratio 0.3547
+[layer 15] running compression ratio 0.3783
+[layer 16] running compression ratio 0.4020
+[layer 17] running compression ratio 0.4256
+[layer 18] running compression ratio 0.4493
+[layer 19] running compression ratio 0.4729
+[layer 20] running compression ratio 0.4966
+[layer 21] running compression ratio 0.5202
+[layer 22] running compression ratio 0.5439
+[layer 23] running compression ratio 0.5675
+[layer 24] running compression ratio 0.5912
+[layer 25] running compression ratio 0.6148
+[layer 26] running compression ratio 0.6385
+[layer 27] running compression ratio 0.6621
+[layer 28] running compression ratio 0.6857
+[layer 29] running compression ratio 0.7094
+[layer 30] running compression ratio 0.7330
+[layer 31] running compression ratio 0.7567
+[layer 32] running compression ratio 0.7803
+[layer 33] running compression ratio 0.8040
+[layer 34] running compression ratio 0.8276
+[layer 35] running compression ratio 0.8513
+[stats] svd_params_removed=0, pruned_params=779950080, svd_ratio=0.0000, prune_ratio=0.2147, comp_ratio=0.8513, avg_bits=2.3797
+[check] pruning rate: 21.4666% >= 20% -> OK
+[check] overall compression ratio: 85.1268% >= 85% -> OK
