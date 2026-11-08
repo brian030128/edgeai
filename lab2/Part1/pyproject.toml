@@ -1,0 +1,16 @@
+[project]
+name = "edgeai-lab2-part1"
+version = "0.1.0"
+description = "Lab 2 Part 1: linear quantization notebook"
+requires-python = "==3.11.*"
+dependencies = [
+    "torch==2.6.0",
+    "torchvision==0.21.0",
+    "timm",
+    "numpy",
+    "tqdm",
+    "matplotlib",
+    "jupyter",
+    "nbconvert",
+    "ipykernel",
+]
