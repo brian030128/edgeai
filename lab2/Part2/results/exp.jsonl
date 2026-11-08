@@ -1,0 +1,15 @@
+{"name": "base", "ppl": 13.6383, "comp_rate": 0.0, "t_compress": 42, "t_eval": 18}
+{"name": "q3pc", "ppl": 19.1775, "comp_rate": 0.81214, "svd_params_removed": 0, "pruned_params": 0, "svd_ratio": 0.0, "prune_ratio": 0.0, "comp_ratio": 0.81214, "avg_bits": 3.00578, "t_compress": 225, "t_eval": 11}
+{"name": "svd20", "ppl": 19.9023, "comp_rate": 0.20017, "svd_params_removed": 727289856, "pruned_params": 0, "svd_ratio": 0.20017, "prune_ratio": 0.0, "comp_ratio": 0.20017, "avg_bits": 12.79724, "t_compress": 225, "t_eval": 27}
+{"name": "q4g128", "ppl": 14.2965, "comp_rate": 0.74023, "svd_params_removed": 0, "pruned_params": 0, "svd_ratio": 0.0, "prune_ratio": 0.0, "comp_ratio": 0.74023, "avg_bits": 4.15625, "t_compress": 236, "t_eval": 12}
+{"name": "prune275", "ppl": 16.2872, "comp_rate": 0.20356, "svd_params_removed": 0, "pruned_params": 739584000, "svd_ratio": 0.0, "prune_ratio": 0.20356, "comp_ratio": 0.20356, "avg_bits": 12.7431, "t_compress": 136, "t_eval": 23}
+{"name": "q3pc_mse", "ppl": 22.3839, "comp_rate": 0.81214, "svd_params_removed": 0, "pruned_params": 0, "svd_ratio": 0.0, "prune_ratio": 0.0, "comp_ratio": 0.81214, "avg_bits": 3.00578, "t_compress": 204, "t_eval": 11}
+{"name": "q4pc", "ppl": 14.2332, "comp_rate": 0.74962, "svd_params_removed": 0, "pruned_params": 0, "svd_ratio": 0.0, "prune_ratio": 0.0, "comp_ratio": 0.74962, "avg_bits": 4.00609, "t_compress": 201, "t_eval": 12}
+{"name": "q3g128", "ppl": 15.3252, "comp_rate": 0.80322, "svd_params_removed": 0, "pruned_params": 0, "svd_ratio": 0.0, "prune_ratio": 0.0, "comp_ratio": 0.80322, "avg_bits": 3.14844, "t_compress": 198, "t_eval": 11}
+{"name": "c3_a", "ppl": 19.8656, "comp_rate": 0.50273, "svd_params_removed": 727289856, "pruned_params": 0, "svd_ratio": 0.20017, "prune_ratio": 0.0, "comp_ratio": 0.50273, "avg_bits": 7.9563, "t_compress": 324, "t_eval": 27}
+{"name": "q4pc_mse", "ppl": 14.0223, "comp_rate": 0.74962, "svd_params_removed": 0, "pruned_params": 0, "svd_ratio": 0.0, "prune_ratio": 0.0, "comp_ratio": 0.74962, "avg_bits": 4.00609, "t_compress": 212, "t_eval": 12}
+{"name": "c2_g512", "ppl": 16.7344, "comp_rate": 0.81018, "svd_params_removed": 0, "pruned_params": 0, "svd_ratio": 0.0, "prune_ratio": 0.0, "comp_ratio": 0.81018, "avg_bits": 3.03711, "t_compress": 247, "t_eval": 11}
+{"name": "c1_kv", "ppl": 14.9525, "comp_rate": 0.75241, "svd_params_removed": 0, "pruned_params": 0, "svd_ratio": 0.0, "prune_ratio": 0.0, "comp_ratio": 0.75241, "avg_bits": 3.96144, "t_compress": 222, "t_eval": 12}
+{"name": "c4_a", "ppl": 22.7334, "comp_rate": 0.85107, "svd_params_removed": 0, "pruned_params": 753131520, "svd_ratio": 0.0, "prune_ratio": 0.20728, "comp_ratio": 0.85107, "avg_bits": 2.3829, "t_compress": 209, "t_eval": 14}
+{"name": "c2_g640", "ppl": 17.2468, "comp_rate": 0.8106, "svd_params_removed": 0, "pruned_params": 0, "svd_ratio": 0.0, "prune_ratio": 0.0, "comp_ratio": 0.8106, "avg_bits": 3.03036, "t_compress": 195, "t_eval": 11}
+{"name": "c1_down4", "ppl": 14.2582, "comp_rate": 0.75108, "svd_params_removed": 0, "pruned_params": 0, "svd_ratio": 0.0, "prune_ratio": 0.0, "comp_ratio": 0.75108, "avg_bits": 3.98268, "t_compress": 194, "t_eval": 12}

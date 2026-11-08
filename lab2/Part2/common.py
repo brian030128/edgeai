@@ -108,6 +108,8 @@ def capture_layer0_inputs(model, calib):
         def __init__(self, m):
             super().__init__()
             self.m = m
+            # Qwen3Model picks the attention mask via decoder_layer.attention_type
+            self.attention_type = getattr(m, "attention_type", "full_attention")
 
         def forward(self, x, **kw):
             store["x"].append(x)

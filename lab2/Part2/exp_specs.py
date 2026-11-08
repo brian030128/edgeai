@@ -20,4 +20,19 @@ SPECS = {
     # --- SVD / pruning alone ---
     "svd20": {"svd": {"rules": [{"cfg": {"ratio": 0.2}}]}},
     "prune275": {"prune": {"rules": [{"cfg": {"ratio": 0.275}}]}},
+    # --- case 2 candidates: 3-bit with large groups (<= 3.04 bits) ---
+    "c2_g512": {"quant": all_quant(q(3, 512))},
+    "c2_g640": {"quant": all_quant(q(3, 640))},
+    # --- case 1 candidates: 4-bit per-row + a few 3-bit g128 matrices ---
+    "c1_kv": {"quant": [{"names": ["k_proj", "v_proj"], "cfg": q(3, 128)}, {"cfg": q(4, -1)}]},
+    "c1_down4": {"quant": [{"names": ["down_proj"], "layers": [16, 17, 18, 19], "cfg": q(3, 128)},
+                           {"cfg": q(4, -1)}]},
+    # --- case 3 candidate: SVD 20% + INT8 factors (MLP + o_proj of layers 0-5) ---
+    "c3_a": {"svd": {"rules": [{"cfg": {"ratio": 0.2}}],
+                     "factor_quant": [{"names": ["gate_proj", "up_proj", "down_proj"], "cfg": q(8, -1)},
+                                      {"names": ["o_proj"], "layers": list(range(6)), "cfg": q(8, -1)}]}},
+    # --- case 4 candidate: prune 28% MLP channels + 3-bit per-channel ---
+    "c4_a": {"prune": {"rules": [{"cfg": {"ratio": 0.28}}]}, "quant": all_quant(q(3, -1))},
+    "c4_b": {"prune": {"rules": [{"cfg": {"ratio": 0.29}}]}, "quant": all_quant(q(3, 640))},
+    "c4_mse":{"prune": {"rules": [{"cfg": {"ratio": 0.28}}]}, "quant": all_quant(q(3, -1, mse=True))},
 }
