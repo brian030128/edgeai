@@ -1,0 +1,6 @@
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]Fetching 3 files:  33%|███▎      | 1/3 [00:07<00:15,  7.71s/it]Fetching 3 files:  67%|██████▋   | 2/3 [00:16<00:08,  8.21s/it]Fetching 3 files: 100%|██████████| 3/3 [00:31<00:00, 10.56s/it]Fetching 3 files: 100%|██████████| 3/3 [00:31<00:00, 10.56s/it]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.40it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.44it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:01<00:00,  2.13it/s]
+Generating test split:   0%|          | 0/4358 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 4358/4358 [00:00<00:00, 467667.31 examples/s]
+Generating train split:   0%|          | 0/36718 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 36718/36718 [00:00<00:00, 1019039.72 examples/s]
+Generating validation split:   0%|          | 0/3760 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 3760/3760 [00:00<00:00, 960332.67 examples/s]
+Token indices sequence length is longer than the specified maximum sequence length for this model (299078 > 131072). Running this sequence through the model will result in indexing errors

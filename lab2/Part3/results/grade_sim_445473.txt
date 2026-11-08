@@ -1,0 +1,7 @@
+[quant] weight bits 4.3420, promoted tiles 0.0450
+PPL: 14.1944
+Weight bits (avg, incl. scales + tile tags): 4.3420
+Activation bits (avg, incl. scales): 6.2500
+Realized effective bit rate (W + A) / 2: 5.2960
+{"ppl": 14.1944, "w_bits": 4.342, "a_bits": 6.25, "a_promoted_frac": 0.0, "eff_bits": 5.296}
+Peak GPU memory: 15.09 GiB
